@@ -15,7 +15,13 @@ app.get('/', (req, res) => {
 });
 
 app.post('/submit', (req, res) => {
-    res.send('<h1>' + req.body.street + ' ' + req.body.pet + '</h1>');
+    res.send(
+        '<h1>Your band name is ' +
+            req.body.street +
+            ' ' +
+            req.body.pet +
+            '</h1>'
+    );
     console.log(req.body);
 });
 
